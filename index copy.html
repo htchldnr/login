@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+    <title>User Input</title>
+  </head>
+
+  <body>
+    
+    <header>
+      <div>
+        <button type="btn"><i class="fa fa-lock"></i> Sign in</button>  
+        <p>
+          Already have an Bootcamp account? <br>
+         <a href="#">I forgot my User ID or Password</a><br>
+        </p>
+      </div> 
+      <!-- end of authentication -->
+    </header>
+
+   <main>
+     <form action="./login.html" method="POST">
+    <fieldset>
+      <p>One Account</p>
+      <p>Everything Bootcamp</p>
+      <p>Create an account for all of Bootcamps products including Hinter. <a href="#">Learn More</a></p>
+      <div id="e-Mail">
+        <label for="E-Mail">E-Mail Adress</label><br>
+        <input id="E-Mail" type="email" name="E-Mail" required><br>
+      </div>
+      <div id="phone">
+        <label for="Phone">Phone Recomended</label><br>
+        <input id="Phone" type="tel" name="Phone" pattern="[0-9]{10}" title="Enter your phone number with 10 digits without starting 0" ><br>
+        <span>Enter your phone number with 10 digits without starting 0 </span>
+      </div>
+      <div id="password">
+        <label for="Password">Password</label><br>
+        <input id="Password" type="password" name="Password" pattern="(=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}" title="Must contain at least one uppercase and lowercase letter,at least 8 and more characters">
+      </div>
+      <button class="btn"> <i class="fa fa-lock"></i> Create Account</button>
+      <p>By clicking Create Account, you agree to our <a href="#">License Agreement</a> and have read and acknowledge our <a href="#"> Privacy Statement</a>.</p>
+    </fieldset>
+    </form>     
+   </main>
+    <footer>
+    <p>Hinter bill pay services provided by Bootcamp Payments Inc. under applicable  <a href="#">License</a></p><br>
+    <p>Legal Privacy Security</p>
+    <p> &copy; 2020 Bootcamp, Inc. All rights reserved.Bootcamps, OuickSteps,QA,Devtax,Prostack and Hinter... </p>
+    </footer>
+  </body>
+</html>
